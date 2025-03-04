@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cawaena Wallet SDK</title>
+    <title>ETOSPHERES</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         :root {
             --primary-dark: #001429;
             --primary-text: #ffffff;
@@ -183,21 +186,55 @@
             font-size: 22px;
         }
         
-        /* CTA Section */
-        .cta {
+        /* Contact Form Section */
+        #contact {
             padding: 100px 0;
-            text-align: center;
         }
-        
-        .cta h2 {
-            font-size: 36px;
+        #contact .form-container {
+            max-width: 500px;
+            width: 100%;
+            background-color: var(--secondary-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin: 0 auto;
+        }
+        #contact h1 {
+            text-align: center;
             margin-bottom: 20px;
         }
-        
-        .cta p {
-            max-width: 600px;
-            margin: 0 auto 40px;
-            font-size: 18px;
+        #contact label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: rgba(255,255,255,0.1);
+            color: var(--primary-text);
+        }
+        #contact textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        #contact .btn-submit {
+            display: inline-block;
+            background-color: var(--accent-button);
+            color: #fff;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        #contact .btn-submit:hover {
+            background-color: var(--button-hover);
         }
         
         /* Footer */
@@ -255,12 +292,13 @@
     <header>
         <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
             <div class="logo" style="margin-right: auto;">
-                <img src="/api/placeholder/40/40" alt="ETOSPHERES Logo">
+                <img src="eto_w.png" alt="ETOSPHERES Logo">
                 <span class="logo-text">ETOSPHERES</span>
             </div>
             <nav>
                 <ul style="display: flex; list-style: none; align-items: center;">
-                    <li><a href="#" class="btn">Get in Touch</a></li>
+                    <!-- Changed href to scroll to contact section -->
+                    <li><a href="#contact" class="btn">Get in Touch</a></li>
                 </ul>
             </nav>
         </div>
@@ -271,7 +309,6 @@
         <div class="container hero-content">
             <h1>EU-Compliant Crypto <span>for Every App</span>.</h1>
             <p>Integrate secure, GDPR-compliant wallet solutions with a single SDK. Complete with KYC onboarding, cryptocurrency transactions, and fiat on/off ramps for your applications.</p>
-
         </div>
     </section>
 
@@ -280,22 +317,22 @@
             <h2 class="section-title">FEATURES</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <img src="/api/placeholder/64/64" alt="Complete Wallet Management">
+                    <img src="wallet_s.png" alt="Complete Wallet Management">
                     <h3>Complete Wallet Management</h3>
                     <p>Custodial and non-custodial wallets with multi-factor authentication and secure key management.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="/api/placeholder/64/64" alt="Built-in KYC">
-                    <h3>Built-in KYC</h3>
+                    <img src="kyc_s.png" alt="Built-in KYC">
+                    <h3>Built-in <br>KYC</h3>
                     <p>In-app verification flow without browser redirects, fully GDPR compliant with automated identity checks.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="/api/placeholder/64/64" alt="Fiat Integration">
-                    <h3>Fiat Integration</h3>
+                    <img src="fiat_s.png" alt="Fiat Integration">
+                    <h3>Modular Fiat Integration</h3>
                     <p>Allow loading cryptocurrency wallets from FIAT bank accounts and vice versa within your application.</p>
                 </div>
                 <div class="feature-card">
-                    <img src="/api/placeholder/64/64" alt="European Data Center">
+                    <img src="gdpr_s.png" alt="European Data Center">
                     <h3>European Data Center</h3>
                     <p>All data stays in EU, never leaves or gets replicated. A fully GDPR compliant solution for your peace of mind.</p>
                 </div>
@@ -303,11 +340,22 @@
         </div>
     </section>
 
-    <section class="cta">
-        <div class="container">
-            <h2>Launching Soon</h2>
-            <p>Contact us about implementing our Wallet SDK in your application.</p>
-            <a href="#" class="btn">Contact Us</a>
+    <!-- Contact Form Section -->
+    <section id="contact">
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <form>
+              <label for="name">Name *</label>
+              <input type="text" id="name" name="name" required />
+
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" required></textarea>
+
+              <button type="submit" class="btn-submit">SUBMIT</button>
+            </form>
         </div>
     </section>
 
@@ -315,12 +363,12 @@
         <div class="container">
             <div class="footer-content">
                 <div class="logo">
-                    <img src="/api/placeholder/40/40" alt="Cawaena Logo">
+                    <img src="eto_w.png" alt="ETOSPHERES Logo">
                     <span class="logo-text">ETOSPHERES</span>
                 </div>
                 <div class="social-links">
-                    <a href="#">X</a>
-                    <a href="#">LinkedIn</a>
+                    <a href="https://x.com/ETOSPHERES" target="_blank">X</a>
+                    <a href="https://x.com/ETOSPHERES" target="_blank">LinkedIn</a>
                 </div>
             </div>
             <div class="copyright">
