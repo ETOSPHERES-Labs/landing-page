@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="de-en">
+<html lang="en">
 <head>
 	<link rel="icon" sizes="16x16" href="favicon-16x16.png">
 	<link rel="icon" sizes="32x32" href="favicon-32x32.png">
-	<link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- For iOS devices -->
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ETOSPHERES - Impressum/Imprint</title>
+    <title>ETOSPHERES - Legal Notice</title>
     <style>
         html {
             scroll-behavior: smooth;
@@ -97,46 +97,35 @@
             background-color: var(--button-hover);
         }
         
-        /* Bilingual Content */
-        .bilingual-content {
+        /* Content */
+        .legal-content {
             padding: 60px 0;
             background-color: var(--primary-dark);
         }
         
-        .bilingual-content h1 {
+        .legal-content h1 {
             font-size: 36px;
             margin-bottom: 30px;
             text-align: center;
         }
         
-        .bilingual-content h2 {
+        .legal-content h2 {
             font-size: 24px;
             margin: 30px 0 15px;
+            color: var(--accent-orange);
         }
         
-        .bilingual-content p {
+        .legal-content h3 {
+            font-size: 20px;
+            margin: 25px 0 10px;
+        }
+        
+        .legal-content p {
             margin-bottom: 15px;
         }
         
-        .bilingual-content strong {
+        .legal-content strong {
             font-weight: bold;
-        }
-        
-        .language-columns {
-            display: flex;
-            gap: 30px;
-            margin-top: 30px;
-        }
-        
-        .language-column {
-            flex: 1;
-        }
-        
-        .language-title {
-            font-size: 24px;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--accent-orange);
         }
         
         .imprint-card {
@@ -145,7 +134,10 @@
             border-radius: 8px;
             margin: 20px 0;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            height: 100%;
+        }
+        
+        .imprint-section {
+            margin-bottom: 40px;
         }
         
         .contact-details dt {
@@ -193,16 +185,6 @@
         }
         
         /* Responsive Design */
-        @media (max-width: 992px) {
-            .language-columns {
-                flex-direction: column;
-            }
-            
-            .language-column {
-                margin-bottom: 40px;
-            }
-        }
-        
         @media (max-width: 768px) {
             nav {
                 display: none;
@@ -234,91 +216,102 @@
         </div>
     </header>
 
-    <section class="bilingual-content">
+    <section class="legal-content">
         <div class="container">
-            <h1>Impressum / Legal Notice</h1>
+            <h1>Legal Notice</h1>
             
-            <div class="language-columns">
-                <!-- German Version -->
-                <div class="language-column">
-                    <h2 class="language-title">Deutsch</h2>
-                    <div class="imprint-card">
-                        <h2>Angaben gemäß § 5 TMG</h2>
+            <div class="imprint-card">
+                <div class="imprint-section">
+                    <h2>1. Information pursuant to § 5 DDG</h2>
+                    
+                    <dl class="contact-details">
+                        <dt>Company:</dt>
+                        <dd>ETOSPHERES Labs GmbH</dd>
                         
-                        <dl class="contact-details">
-                            <dt>Unternehmen:</dt>
-                            <dd>ETOSPHERES Labs GmbH</dd>
-                            
-                            <dt>Vertreten durch:</dt>
-                            <dd>Dr. Michael Schwabe (Geschäftsführer)</dd>
-                            
-                            <dt>Anschrift:</dt>
-                            <dd>
-                                Hardtring 6<br>
-                                78333 Stockach<br>
-                                Deutschland
-                            </dd>
-                            
-                            <dt>Kontakt:</dt>
-                            <dd>
-                                Telefon: +49 7771 809-4000<br>
-                                E-Mail: contact@etospheres.com
-                            </dd>
-                            
-                            <dt>Registereintrag:</dt>
-                            <dd>
-                                Handelsregister: HRB 707267<br>
-                                Registergericht: Amtsgericht Freiburg
-                            </dd>
-                            
-                            <dt>Umsatzsteuer-ID:</dt>
-                            <dd>
-                                Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br>
-                                DE 280394267
-                            </dd>
-                        </dl>
-                    </div>
+                        <dt>Represented by:</dt>
+                        <dd>Dr. Michael Schwabe (CEO)</dd>
+                        
+                        <dt>Address:</dt>
+                        <dd>
+                            Hardtring 6<br>
+                            78333 Stockach<br>
+                            Germany
+                        </dd>
+                        
+                        <dt>Contact:</dt>
+                        <dd>
+                            Phone: +49 7771 809-4000<br>
+                            Email: contact@etospheres.com<br>
+                            Website: www.etospheres.com
+                        </dd>
+                        
+                        <dt>Commercial Register:</dt>
+                        <dd>
+                            Commercial Register: HRB 707267<br>
+                            Registration Court: Amtsgericht Freiburg
+                        </dd>
+                        
+                        <dt>VAT ID:</dt>
+                        <dd>
+                            VAT Identification Number according to § 27a of the German VAT Act:
+                            DE 280394267
+                        </dd>
+                        
+                        <dt>Person responsible for journalistic-editorial content:</dt>
+                        <dd>
+                            Dr. Michael Schwabe<br>
+                            Hardtring 6<br>
+                            78333 Stockach<br>
+                            Germany
+                        </dd>
+                    </dl>
                 </div>
                 
-                <!-- English Version -->
-                <div class="language-column">
-                    <h2 class="language-title">English</h2>
-                    <div class="imprint-card">
-                        <h2>Information pursuant to § 5 TMG</h2>
-                        
-                        <dl class="contact-details">
-                            <dt>Company:</dt>
-                            <dd>ETOSPHERES Labs GmbH</dd>
-                            
-                            <dt>Represented by:</dt>
-                            <dd>Dr. Michael Schwabe (CEO)</dd>
-                            
-                            <dt>Address:</dt>
-                            <dd>
-                                Hardtring 6<br>
-                                78333 Stockach<br>
-                                Germany
-                            </dd>
-                            
-                            <dt>Contact:</dt>
-                            <dd>
-                                Phone: +49 7771 809-4000<br>
-                                Email: contact@etospheres.com
-                            </dd>
-                            
-                            <dt>Commercial Register:</dt>
-                            <dd>
-                                Commercial Register: HRB 707267<br>
-                                Registration Court: Amtsgericht Freiburg
-                            </dd>
-                            
-                            <dt>VAT ID:</dt>
-                            <dd>
-                                VAT Identification Number according to § 27a of the German VAT Act:
-                                DE 280394267
-                            </dd>
-                        </dl>
-                    </div>
+                <div class="imprint-section">
+                    <h2>2. Additional Information</h2>
+                    
+                    <h3>Information on Online Dispute Resolution & Alternative Dispute Resolution</h3>
+                    <p>The European Commission provides a platform for out-of-court online dispute resolution (OS platform), which can be accessed at www.ec.europa.eu/consumers/odr.</p>
+                    <p>We are neither obliged nor willing to participate in dispute resolution proceedings before a consumer arbitration board.</p>
+                    
+                    <h3>Terms and Conditions</h3>
+                    <p>By accessing and using this website, you accept our Terms of Use in their respective version. If you do not agree with these, please terminate your access and use of this website.</p>
+                </div>
+                
+                <div class="imprint-section">
+                    <h2>3. Liability</h2>
+                    
+                    <p>We are responsible for the content on this website in accordance with general laws, in particular § 7 para. 1 of the Digital Services Act (DDG). All content is created with due care and to the best of our knowledge and serves purely informational purposes. To the extent that we refer to third-party websites via hyperlink on our website, we cannot guarantee the continued timeliness, correctness, and completeness of the linked content, as this content is outside our area of responsibility and we have no influence on future design. We hereby exclude any liability for the content of third-party websites that can be accessed via links on our website and expressly distance ourselves from the content on linked third-party websites. If you believe that content violates applicable law or is inappropriate, please let us know.</p>
+                    
+                    <p>The legal notices on this website as well as all questions and disputes relating to the design of this website are subject to the laws of the Federal Republic of Germany.</p>
+                </div>
+                
+                <div class="imprint-section">
+                    <h2>4. Data Protection</h2>
+                    
+                    <p>Our privacy policy can be found <a href="datenschutz.html" style="color: var(--accent-orange);">here</a>.</p>
+                </div>
+                
+                <div class="imprint-section">
+                    <h2>5. Copyright Notice</h2>
+                    
+                    <p>The texts, images, photos, videos, or graphics on our website are generally protected by copyright. Any unauthorized use (in particular the reproduction, editing, or distribution) of this copyrighted content is therefore prohibited. If you intend to use this content or parts of it, please contact us in advance using the information above. If we are not the owners of the required copyright usage rights, we will endeavor to establish contact with the rightful owner.</p>
+                </div>
+                
+                <div class="imprint-section">
+                    <h2>6. Social Media Profiles</h2>
+                    
+                    <p>This legal notice also applies to the following social media profiles:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>X (Twitter): <a href="https://x.com/ETOSPHERES" style="color: var(--accent-orange);">https://x.com/ETOSPHERES</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/company/etospheres/" style="color: var(--accent-orange);">https://www.linkedin.com/company/etospheres/</a></li>
+                    </ul>
+                </div>
+                
+                <div class="imprint-section">
+                    <h2>7. Readability</h2>
+                    
+                    <p>To improve readability in the texts displayed on our websites, the generic masculine form is usually used. Unless otherwise stated, all formulations are to be understood as gender-neutral and inclusive.</p>
                 </div>
             </div>
         </div>
@@ -333,11 +326,11 @@
                 </div>
                 <div class="social-links">
                     <a href="https://x.com/ETOSPHERES" target="_blank">X</a>
-                    <a href="https://x.com/ETOSPHERES" target="_blank">LinkedIn</a>
+                    <a href="https://www.linkedin.com/company/etospheres/" target="_blank">LinkedIn</a>
                 </div>
             </div>
             <div class="footer-links" style="margin: 20px 0;">
-                <a href="index.html" target="_blank">Back</a>
+                <a href="index.html">Back</a>
                 <a href="impressum.html">Imprint</a>
                 <a href="datenschutz.html">Privacy Policy</a>
             </div>
